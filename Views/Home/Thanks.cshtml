@@ -1,6 +1,10 @@
 ﻿
-@mode PartyInvites.Models.GuestResponse
+@model PartyInvites.Models.GuestResponse
+<<<<<<< Updated upstream
  
+=======
+
+>>>>>>> Stashed changes
 @{
     Layout = null;
 }
@@ -11,11 +15,21 @@
     <title>
         THANKS A LOT
     </title>
-
-
 </head>
 <body>
 
+    <h1>Thank You @Model.Name !</h1>
+    <div>
+        @if (Model.WillAttend == true)
+        {
+            @:It's great that you are coming. The drinks are already in the fridge!
+        }
+        else
+        {
+            @:Sorry to hear that you can't make it, but thanks for letting us know.
+        }
+    </div>
+    Click <a asp-action="ListResponses">here</a> to see who is coming.
 </body>
 </html>
 
