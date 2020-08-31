@@ -12,6 +12,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    @*<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />*@
     <title>
         THANKS A LOT
     </title>
@@ -19,7 +20,7 @@
 <body>
 
     <h1>Thank You @Model.Name !</h1>
-    <div>
+    <div class="text-center">
         @if (Model.WillAttend == true)
         {
             @:It's great that you are coming. The drinks are already in the fridge!
